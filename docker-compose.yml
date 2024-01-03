@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  aooserver:
+    image: aooserver
+    build: .
+    container_name: aooserver
+#    environment:
+#      - PORT=10988
+#    ports:
+#      - 10988:10988
+    network_mode: 'host' # this mode exposes the container to the network directly.
+
